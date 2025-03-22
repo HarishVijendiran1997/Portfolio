@@ -17,7 +17,7 @@ const Skills = () => {
 
                 {/* Tech Title */}
                 <div className='flex items-center'>
-                    <h2 className='text-gray-700 text-xl md:text-4xl font-bold md:m-4'>
+                    <h2 className='text-gray-700 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold md:m-4'>
                         My<br />Front-end<br />Stack
                     </h2>
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z" className='animation-pulse duration-150' /></svg>
@@ -60,7 +60,7 @@ const Skills = () => {
 
                 {/* Tech Title */}
                 <div className='flex items-center'>
-                    <h2 className='text-gray-700 text-xl md:text-4xl font-bold md:m-5.5'>
+                    <h2 className='text-gray-700 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold md:m-5.5'>
                         My<br />Back-end<br />Stack
                     </h2>
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z" className='animation-pulse duration-150' /></svg>

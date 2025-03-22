@@ -4,10 +4,10 @@ import { TypeAnimation } from "react-type-animation"
 
 const Hero = () => {
     return (
-        <div className='grid grid-cols-1 sm:grid-cols-3 gap-8 md:gap-0 max-w-[1200px] md:h-[70vh] mx-auto py-8 bg-black'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-0 max-w-[1200px] md:h-[70vh] mx-auto py-8 bg-black'>
 
             {/*Hero Image */}
-            <div className='col-span-1 my-auto mx-auto w-[300px] h-auto md:w-[250px] lg:w-[300px]'>
+            <div className='col-span-1 sm:px-5 md:px-0 my-auto mx-auto w-[300px] h-auto md:w-[250px] lg:w-[300px]'>
                 <img src={heroImage} alt='hero-image' className='object-cover w-full h-full rounded-[60px] shadow-[4px_-4px_10px_rgb(236,72,153),-4px_4px_10px_rgb(96,165,250)] hover:shadow-[4px_-4px_10px_rgb(96,165,250),-4px_4px_10px_rgb(236,72,153)] transition-all duration-1000' />
             </div>
 
