@@ -3,7 +3,7 @@ import aboutImg from '../assets/about.jpg'
 
 const About = () => {
     return (
-        <div className='text-white max-w-[1200px] mx-auto my-12' id='about'>
+        <div className='scroll-smooth text-white max-w-[1200px] mx-auto my-12' id='about'>
 
             <div className='md:grid md:grid-cols-2 sm:py-16'>
 

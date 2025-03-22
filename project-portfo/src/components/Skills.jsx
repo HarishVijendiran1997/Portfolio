@@ -13,7 +13,7 @@ import jwt from '../assets/jwt.png'
 const Skills = () => {
     return (
         <>
-            <div className='border border-gray-800 sm:my-5 bg-black text-gray-400 px-8 py-4 md:h-[150px] max-w-[1200px] md:rounded-t-4xl mx-auto grid grid-cols-6 place-items-center md:flex md:justify-between md:items-center'>
+            <div className='border border-gray-800 sm:my-5 bg-black text-gray-400 px-8 py-4 md:h-[150px] max-w-[1200px] md:rounded-t-4xl mx-auto grid grid-cols-3 place-items-center md:flex md:justify-between md:items-center'>
 
                 {/* Tech Title */}
                 <div className='flex items-center'>
@@ -56,7 +56,7 @@ const Skills = () => {
             </div>
 
             {/* Backend */}
-            <div className='border border-gray-800 sm:my-5 bg-black text-gray-400 px-8 py-4 md:h-[150px] max-w-[1200px] md:rounded-b-4xl mx-auto grid grid-cols-6    place-items-center md:flex md:justify-between md:items-center'>
+            <div className='border border-gray-800 sm:my-5 bg-black text-gray-400 px-8 py-4 md:h-[150px] max-w-[1200px] md:rounded-b-4xl mx-auto grid grid-cols-3    place-items-center md:flex md:justify-between md:items-center'>
 
                 {/* Tech Title */}
                 <div className='flex items-center'>
@@ -67,7 +67,7 @@ const Skills = () => {
                 </div>
 
                 {/* Node js */}
-                <div className='flex flex-col items-center m-4 sm:my-0 w-[40px] md:w-[130px]'>
+                <div className='flex flex-col items-center m-4 sm:my-0 w-[40px] md:w-[140px]'>
                     <img src={nodejs} alt='NodeJs' width={130} height={130} />
                     <p className='mt-2'>Node Js</p>
                 </div>
@@ -85,7 +85,7 @@ const Skills = () => {
                 </div>
 
                 {/* mysql */}
-                <div className='flex flex-col items-center m-4 sm:my-0 w-[40px] md:w-[130px]'>
+                <div className='flex flex-col items-center m-4 sm:my-0 w-[80px] md:w-[130px]'>
                     <img src={mysql} alt='MySQL' width={150} height={150} />
                     <p className='mt-2'>MySQL</p>
                 </div>

@@ -8,7 +8,7 @@ import proj6 from '../assets/proj6.png'
 
 const project = () => {
   return (
-    <div className='max-w-[1200px] mx-auto p-5' id='project'>
+    <div className='scroll-smooth max-w-[1200px] mx-auto p-5' id='project'>
 
       {/* Project Title */}
       <div className='pb-8'>
