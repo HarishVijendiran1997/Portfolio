@@ -13,7 +13,7 @@ import jwt from '../assets/jwt.png'
 const Skills = () => {
     return (
         <>
-            <div className='border border-gray-800 bg-black text-gray-400 px-8 md:px-20 md:h-[150px] max-w-[1200px] md:rounded-t-4xl mx-auto grid grid-cols-6 place-items-center md:flex md:justify-between md:items-center'>
+            <div className='border border-gray-800 bg-black text-gray-400 px-8 py-4 md:h-[150px] max-w-[1200px] md:rounded-t-4xl mx-auto grid grid-cols-6 place-items-center md:flex md:justify-between md:items-center'>
 
                 {/* Tech Title */}
                 <div className='flex items-center'>
@@ -56,7 +56,7 @@ const Skills = () => {
             </div>
 
             {/* Backend */}
-            <div className='border border-gray-800 bg-black text-gray-400 px-8 md:px-20 md:h-[150px] max-w-[1200px] md:rounded-b-4xl mx-auto grid grid-cols-6 place-items-center md:flex md:justify-between md:items-center'>
+            <div className='border border-gray-800 bg-black text-gray-400 px-8 py-4 md:h-[150px] max-w-[1200px] md:rounded-b-4xl mx-auto grid grid-cols-6 place-items-center md:flex md:justify-between md:items-center'>
 
                 {/* Tech Title */}
                 <div className='flex items-center'>

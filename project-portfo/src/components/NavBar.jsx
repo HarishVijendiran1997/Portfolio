@@ -16,7 +16,7 @@ const NavBar = () => {
             {/* Desktop Menu */}
             <ul className="hidden md:flex space-x-8">
                 <li className="p-3 hover:text-white hover:scale-105 transition-all duration-200 ease"><a href="#about">About</a></li>
-                <li className="p-3 hover:text-white hover:scale-105 transition-all duration-200 ease"><a href="#work">Work</a></li>
+                <li className="p-3 hover:text-white hover:scale-105 transition-all duration-200 ease"><a href="#project">Project</a></li>
                 <li className="p-3 hover:text-white hover:scale-105 transition-all duration-200 ease"><a href="#contact">Contact</a></li>
             </ul>
             {/* Mobile Menu Toggle */}
@@ -28,9 +28,9 @@ const NavBar = () => {
             <div className={`fixed top-0 left-0 h-full w-[65%] bg-[#202121] transition-all duration-500 z-50 ${nav ? "left-0" : "left-[-100%]"}`}>
                 <h1 className="text-3xl bg-gradient-to-r text-transparent bg-clip-text from-blue-500 to-pink-500 m-4 ">Harish Vijendiran</h1>
                 <ul className="p-8 text-xl">
-                    <li className="p-3 hover:bg-gray-700 transition-all duration-300"><a href="#about">About</a></li>
-                    <li className="p-3 hover:bg-gray-700 transition-all duration-300"><a href="#work">Work</a></li>
-                    <li className="p-3 hover:bg-gray-700 transition-all duration-300"><a href="#contact">Contact</a></li>
+                    <li className="p-3 hover:bg-gray-700 transition-all duration-300"><a onClick={() => setNav(!nav)} href="#about">About</a></li>
+                    <li className="p-3 hover:bg-gray-700 transition-all duration-300"><a onClick={() => setNav(!nav)} href="#project">Project</a></li>
+                    <li className="p-3 hover:bg-gray-700 transition-all duration-300"><a onClick={() => setNav(!nav)} href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
