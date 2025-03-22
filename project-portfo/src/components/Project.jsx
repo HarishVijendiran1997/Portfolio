@@ -12,7 +12,7 @@ const project = () => {
 
       {/* Project Title */}
       <div className='pb-8'>
-        <p className='text-4xl mb-3 font-bold bg-gradient-to-r bg-pink-500 text-transparent bg-clip-text from-blue-500  to-pink-500'>Project</p>
+        <p className='text-4xl mb-3 font-bold bg-gradient-to-r bg-pink-500 text-transparent bg-clip-text from-blue-500  to-pink-500  inline-block'>Project</p>
         <p className='text-gray-400'>Check out some of my recent project</p>
       </div>
 
