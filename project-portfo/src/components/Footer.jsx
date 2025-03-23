@@ -3,7 +3,7 @@ import { FaLinkedin, FaGithub, FaInstagram, FaEnvelope } from 'react-icons/fa';
 
 const Footer = () => {
     return (
-        <div className='max-w-[1200px] sm:h-[150px] p-12 flex justify-between mx-auto'>
+        <div className='md:max-w-[90%] sm:h-[150px] px-12 py-4 md:py-0 flex justify-between mx-auto'>
             <div className='flex flex-col gap-5 '>
                 <span className='text-transparent bg-gradient-to-r bg-clip-text from-blue-500  to-pink-500 font-semibold animate-pulse inline-block'><a href='#home'>V. Harish</a></span>
                 <p className='text-gray-600'>&copy; WebDev@2025</p>

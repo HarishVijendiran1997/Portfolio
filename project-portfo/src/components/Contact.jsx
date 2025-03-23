@@ -39,7 +39,7 @@ const Contact = () => {
         }
     }
     return (
-        <div className='max-w-[1200px] mx-auto sm:py-20 p-5 scroll-smooth' id='contact'>
+        <div className='max-w-[1200px] mx-auto sm:pt-20 sm:pb-18 p-5 scroll-smooth' id='contact'>
 
             {/* Contact Title */}
             <div className='text-center'>
