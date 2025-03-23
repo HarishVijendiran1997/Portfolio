@@ -9,92 +9,62 @@ import express from '../assets/express.png'
 import mongodb from '../assets/mongodb.png'
 import mysql from '../assets/mysql.png'
 import jwt from '../assets/jwt.png'
+import Tech from '../helpers/Tech'
 
 const Skills = () => {
     return (
         <>
-            <div className='border border-gray-800 sm:my-5 bg-black text-gray-400 px-8 py-4 md:h-[150px] max-w-[1200px] md:rounded-t-4xl mx-auto grid grid-cols-3 place-items-center md:flex md:justify-between md:items-center'>
+            {/* Front-end Tech */}
+            <div className='border border-gray-800 sm:my-5 bg-black text-gray-400 px-8 py-4 md:h-auto max-w-[100%] md:max-w-[1200px] md:rounded-t-4xl mx-auto flex flex-wrap justify-center items-center gap-6'>
 
                 {/* Tech Title */}
-                <div className='flex items-center'>
-                    <h2 className='text-gray-700 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold md:m-4'>
+                <div className='flex flex-col items-center w-full md:w-auto text-center'>
+                    <h2 className='text-gray-700 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold md:m-5'>
                         My<br />Front-end<br />Stack
                     </h2>
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z" className='animation-pulse duration-150' /></svg>
                 </div>
 
                 {/* HTML */}
-                <div className='flex flex-col items-center m-4 sm:my-0 w-[40px] md:w-[100px]'>
-                    <img src={html} alt='HTML' width={100} height={100} />
-                    <p className='mt-2'>HTML</p>
-                </div>
+                <Tech srcPath={html} srcAlt={"HTML skill"} srcName='Html' width={100} height={100} outerSmallScreenW='40px' outerLargeScreenW='100px' />
 
                 {/* CSS */}
-                <div className='flex flex-col items-center m-4 sm:my-0 w-[40px] md:w-[100px]'>
-                    <img src={css} alt='CSS' width={100} height={100} />
-                    <p className='mt-2'>CSS</p>
-                </div>
+                <Tech srcPath={css} srcAlt={"CSS skill"} srcName='CSS' width={100} height={100} outerSmallScreenW='40px' outerLargeScreenW='100px' />
 
                 {/* JavaScript */}
-                <div className='flex flex-col items-center m-4 sm:my-0 w-[40px] md:w-[100px]'>
-                    <img src={javascript} alt='JavaScript' width={100} height={100} />
-                    <p className='mt-2'>JavaScript</p>
-                </div>
+                <Tech srcPath={javascript} srcAlt={"Javascript language"} srcName='Javascript' width={100} height={100} outerSmallScreenW='40px' outerLargeScreenW='100px' />
 
                 {/* Tailwind CSS */}
-                <div className='flex flex-col items-center m-4 sm:my-0 w-[40px] md:w-[100px]'>
-                    <img src={tailwind} alt='Tailwind CSS' width={100} height={100} />
-                    <p className='mt-2'>Tailwind</p>
-                </div>
+                <Tech srcPath={tailwind} srcAlt={"Tailwind CSS tech"} srcName='Tailwind' width={100} height={100} outerSmallScreenW='40px' outerLargeScreenW='100px' />
 
                 {/* React */}
-                <div className='flex flex-col items-center m-4 sm:my-0 w-[40px] md:w-[100px]'>
-                    <img src={react} alt='React' width={100} height={100} />
-                    <p className='mt-2'>React</p>
-                </div>
+                <Tech srcPath={react} srcAlt={"React JS tech"} srcName='React' width={100} height={100} outerSmallScreenW='40px' outerLargeScreenW='100px' />
 
             </div>
 
-            {/* Backend */}
-            <div className='border border-gray-800 sm:my-5 bg-black text-gray-400 px-8 py-4 md:h-[150px] max-w-[1200px] md:rounded-b-4xl mx-auto grid grid-cols-3    place-items-center md:flex md:justify-between md:items-center'>
+            {/* Back-end Tech*/}
+            <div className='border border-gray-800 sm:my-5 bg-black text-gray-400 px-8 py-4 md:h-auto max-w-[100%] md:max-w-[1200px] md:rounded-b-4xl mx-auto flex flex-wrap justify-center items-center gap-6'>
 
                 {/* Tech Title */}
-                <div className='flex items-center'>
-                    <h2 className='text-gray-700 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold md:m-5.5'>
+                <div className='flex flex-col items-center w-full md:w-auto text-center'>
+                    <h2 className='text-gray-700 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold md:m-5'>
                         My<br />Back-end<br />Stack
                     </h2>
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z" className='animation-pulse duration-150' /></svg>
                 </div>
 
                 {/* Node js */}
-                <div className='flex flex-col items-center m-4 sm:my-0 w-[40px] md:w-[140px]'>
-                    <img src={nodejs} alt='NodeJs' width={130} height={130} />
-                    <p className='mt-2'>Node Js</p>
-                </div>
+                <Tech srcPath={nodejs} srcAlt={"NodeJs language"} srcName='Nodejs' width={100} height={100} outerSmallScreenW='40px' outerLargeScreenW='100px' />
 
                 {/* express */}
-                <div className='flex flex-col items-center m-4 sm:my-0 w-[40px] md:w-[100px]'>
-                    <img src={express} alt='Express' width={100} height={100} />
-                    <p className='Express'>Express</p>
-                </div>
+                <Tech srcPath={express} srcAlt={"Express language"} srcName='Express' width={100} height={100} outerSmallScreenW='40px' outerLargeScreenW='100px' />
 
                 {/* mongodb */}
-                <div className='flex flex-col items-center m-4 sm:my-0 w-[40px] md:w-[100px]'>
-                    <img src={mongodb} alt='MongoDB' width={100} height={100} />
-                    <p className='mt-2'>MongoDB</p>
-                </div>
+                <Tech srcPath={mongodb} srcAlt={"MongoDB tech"} srcName='MongoDB' width={100} height={100} outerSmallScreenW='40px' outerLargeScreenW='100px' />
 
                 {/* mysql */}
-                <div className='flex flex-col items-center m-4 sm:my-0 w-[80px] md:w-[130px]'>
-                    <img src={mysql} alt='MySQL' width={150} height={150} />
-                    <p className='mt-2'>MySQL</p>
-                </div>
+                <Tech srcPath={mysql} srcAlt={"MySQL tech"} srcName='MySQL' width={100} height={100} outerSmallScreenW='80px' outerLargeScreenW='100px' />
 
                 {/* jwt */}
-                <div className='flex flex-col items-center m-4 sm:my-0 w-[40px] md:w-[100px]'>
-                    <img src={jwt} alt='JWT' width={100} height={100} />
-                    <p className='mt-2'>JWT</p>
-                </div>
+                <Tech srcPath={jwt} srcAlt={"JWT tech"} srcName='JWT' width={100} height={100} outerSmallScreenW='40px' outerLargeScreenW='100px' />
 
             </div>
 
