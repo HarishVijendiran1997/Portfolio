@@ -16,21 +16,20 @@ const Contact = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
+        const formData = [
+            [name, email, message]
+        ]
         try {
             const response = await fetch(import.meta.env.VITE_GOOGLE_FORM_URL, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify([[
-                    name,
-                    email,
-                    message,
-                    new Date().toLocaleString()
-                ]])
+                body: JSON.stringify(formData)
             }
             )
-            await response.json();
+            const result = await response.json();
+            console.log(result);
             SetOnSuccess(true)
             setTimeout(() => SetOnSuccess(false), 5000)
             setData({ ...data, name: "", email: "", message: "", })
