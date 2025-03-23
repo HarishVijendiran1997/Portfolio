@@ -39,6 +39,8 @@ const Skills = () => {
                 {/* React */}
                 <Tech srcPath={react} srcAlt={"React JS tech"} srcName='React' width={100} height={100} outerSmallScreenW='40px' outerLargeScreenW='100px' />
 
+                {/* Add more technologies here*/}
+
             </div>
 
             {/* Back-end Tech*/}
@@ -65,6 +67,8 @@ const Skills = () => {
 
                 {/* jwt */}
                 <Tech srcPath={jwt} srcAlt={"JWT tech"} srcName='JWT' width={100} height={100} outerSmallScreenW='40px' outerLargeScreenW='100px' />
+
+                {/* Add more technologies here*/}
 
             </div>
 

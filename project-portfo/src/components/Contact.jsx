@@ -77,10 +77,12 @@ const Contact = () => {
 
                                 {/* Submit Button */}
                                 <div className='sm:col-span-2'>
-                                    <button type='submit' className="text-xl w-full p-4 mt-2 font-semibold text-white bg-gradient-to-r from-blue-500 to-pink-500 rounded-md cursor-pointer">Send</button>
+                                    <button type='submit' className="text-xl w-full p-4 mt-2 text-white bg-gradient-to-r from-blue-500 to-pink-500 rounded-md cursor-pointer hover:from-blue-600 hover:to-pink-600">Send</button>
                                 </div>
 
                             </div>
+
+                            {/* Success Message */}
                             {onSuccess && <div className='text-center mt-4 font-semibold text-green-500'>Message Sent Successfully!</div>}
                         </form>
 
